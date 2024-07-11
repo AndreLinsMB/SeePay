@@ -1,0 +1,30 @@
+<div class="form-container">
+  <header>
+    <h1>See Pay</h1>
+    <img src="../../../assets/icondinheiro.png" alt="money" />
+  </header>
+  <section id="user">
+    <h2>Bem vindo!</h2>
+    <form [formGroup]="form">
+      <input
+        type="email"
+        placeholder="Email"
+        formControlName="email"
+
+      />
+
+      <input
+        type="password"
+        placeholder="Senha"
+        formControlName="senha"
+
+      />
+
+         <button >Entrar</button>
+      <p>
+        Não é cadastrado?
+        <a routerLink="/cadastro"> <strong>Cadastre-se</strong></a>
+      </p>
+    </form>
+  </section>
+</div>
